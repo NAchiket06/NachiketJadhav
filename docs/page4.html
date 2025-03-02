@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v5.9.11, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.9.11, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/screenshot-2024-10-14-231055-128x72.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Nachiket/Pathfinding Demo</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/parallax/jarallax.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/gallery/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-uEhrwM5cd3" once="menu" id="menu02-3k">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-white text-primary display-4" href="index.html#header05-1">NACHIKET JADHAV</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+						<a class="nav-link link text-danger text-primary display-4" href="index.html#list06-1l" aria-expanded="false">Work Experience</a>
+					</li><li class="nav-item">
+						<a class="nav-link link text-danger text-primary display-4" href="index.html#features04-w">Portfolio</a>
+					</li></ul>
+				<div class="icons-menu">
+					<a class="iconfont-wrapper" href="https://wa.me/917039394818">
+						<span class="p-2 mbr-iconfont mobi-mbri-phone mobi-mbri"></span>
+					</a>
+					<a class="iconfont-wrapper" href="mailto:nachiketjadhav0606@gmail.com">
+						<span class="p-2 mbr-iconfont mobi-mbri-letter mobi-mbri"></span>
+					</a>
+					
+					
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section data-bs-version="5.1" class="header16 cid-uEhIhLTm2J mbr-fullscreen mbr-parallax-background" id="header17-3s">
+  
+  <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="content-wrap col-12 col-md-12">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
+          <strong><br>Pathfinding Demo</strong></h1>
+        
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">A base pathfinder algorithm using Dijkstra's algorithm, with smart AI cars that can traverse the environment with a set of rules associated.&nbsp;</p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="header1 cid-u1PEDzZJvN" id="header01-2y">
+	
+
+	
+	
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-4 image-wrapper">
+				<img class="w-100" src="assets/images/astarpathfinding.png" alt="Mobirise Website Builder">
+			</div>
+			<div class="col-12 col-lg col-md-12">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2"><strong>Dijkstra's Algorithm</strong></h1>
+					<p class="mbr-text mbr-fonts-style mb-4 display-7"><br>Dijkstra's algorithm is a widely-used pathfinding algorithm in computer science. It efficiently finds the shortest path between two nodes in a graph by iteratively selecting the node with the lowest cumulative cost from a source node. Although primarily designed for non-negative edge weights, its simplicity and effectiveness make it a foundational tool in network routing, transportation planning, and various other applications requiring optimal path determination.&nbsp;<br>Dijkstra's algorithm maintains a priority queue to systematically explore and update the costs of neighboring nodes, ensuring an accurate and optimal path. While its effectiveness is notable, the algorithm may not handle graphs with negative edge weights correctly, and variations like the Bellman-Ford algorithm are preferred for such scenarios.</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="timeline02 cid-u1SB5Uayuy" id="timeline02-2z">
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 mb-5 content-head">
+        <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+          <strong>How does it work?</strong></h3>
+        
+      </div>
+    </div>
+    <div class="row justify-content-center item features-without-image active">
+      <div class="col-12 col-lg">
+        <p class="mbr-card-subtitle mbr-fonts-style mt-0 mb-2 display-5"><strong>
+          1.</strong></p>
+        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-2 display-2">
+          <strong>Graph Setup</strong></h5>
+        <p class="mbr-text mbr-fonts-style mt-0 display-7">For this algorithm to work, it needs a weighted graph, with each node having&nbsp; a list of its neighbor nodes. As depicted here, the selected node has 3 neighbor nodes, i.e. 3 nodes that it can move to after visiting this node. This can be extended to give each neighbor a weight property, prioritizing some neighbors over others.</p>
+      </div>
+      <div class="col-md-12 col-lg-5 item-wrapper">
+        <div class="image-wrapper mb-5">
+          <img src="assets/images/screenshot-2024-01-20-113654-1008x863.png" alt="Mobirise Website Builder">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="image01 cid-u1SFaHO6i1" id="image01-31">
+  
+
+  
+  
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-5">
+        <div class="image-wrapper mb-4">
+          <img class="w-100" src="assets/images/screenshot-2024-01-20-114043-1331x827.png" alt="Mobirise Website Builder">
+        </div>
+        <h4 class="mbr-description mbr-fonts-style mb-3 align-center display-7"><strong>Figure showing the complete graph when all the nodes are selected.</strong></h4>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="timeline02 cid-u1SF3c0Tge" id="timeline02-30">
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      
+    </div>
+    <div class="row justify-content-center item features-without-image active">
+      <div class="col-12 col-lg">
+        <p class="mbr-card-subtitle mbr-fonts-style mt-0 mb-2 display-5"><strong>
+          2.</strong></p>
+        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-2 display-2">
+          <strong>Pathfinding</strong></h5>
+        <p class="mbr-text mbr-fonts-style mt-0 display-7">After the initial graph setup, the next step to mark the start and end nodes, and find a path between the two nodes. Figure shows a path found between source and target node found by the algorithm. <br><br>For more information on how it finds the shortest path, here is the link to the Wikipedia page for the same.<br><a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" class="text-primary" target="_blank"><em>&nbsp;https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm</em></a></p>
+      </div>
+      <div class="col-md-12 col-lg-6 item-wrapper">
+        <div class="image-wrapper mb-5">
+          <img src="assets/images/screenshot-2024-01-20-115535-1057x851.png" alt="Mobirise Website Builder">
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center item features-without-image">
+      <div class="col-12 col-lg">
+        <p class="mbr-card-subtitle mbr-fonts-style mt-0 mb-2 display-5"><strong>
+          3.</strong></p>
+        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-2 display-2"><strong>Bezier Curves</strong></h5>
+        <p class="mbr-text mbr-fonts-style mt-0 display-7">
+          For smooth traversal in the path, the hard edges need to be smoothened out. This is done by calculating the points for a Bezier Curve&nbsp; between any 2 neighbor nodes, and giving in a step value for how smooth the curve needs to be.<br><br>Figure shows the Bezier Curve between 2 nodes formed at various steps, going from 1-&gt;3-&gt;7-&gt;10 from top-left to bottom-right.<br><br>For more information on how the curve is formed, here is a video link of&nbsp;<br><em><a href="https://www.youtube.com/@acegikmo" class="text-primary" target="_blank">Freya Holmér</a> </em>explaining Bezier Curves.<br><em><a href="https://youtu.be/jvPPXbo87ds?t=139" class="text-primary" target="_blank">https://youtu.be/jvPPXbo87ds?t=139</a></em><br></p>
+      </div>
+      <div class="col-md-12 col-lg-6 item-wrapper">
+        <div class="image-wrapper mb-5">
+          <img src="assets/images/screenshot-2024-01-20-121418-1256x1256.png" alt="Mobirise Website Builder" data-slide-to="1" data-bs-slide-to="1">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery1 mbr-gallery cid-u1SQ0EW6V8" id="gallery02-32">   
+    
+    
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center m-0 display-2"><strong>The Result..</strong></h3>
+                    <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">A smooth path between 2 nodes for entities to follow and move around in your virtual environments.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row mbr-gallery mbr-masonry" data-masonry="{&quot;percentPosition&quot;: true }">
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uEhJBD65f5-modal" data-bs-target="#uEhJBD65f5-modal">
+                    <img class="w-100" src="assets/images/screenshot-2024-01-20-122635-838x819.png" alt="Mobirise Website Builder" data-slide-to="0" data-bs-slide-to="0" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uEhJBD65f5-modal" data-bs-target="#uEhJBD65f5-modal">
+                    <img class="w-100" src="assets/images/screenshot-2024-01-20-122651-838x755.png" alt="Mobirise Website Builder" data-slide-to="1" data-bs-slide-to="1" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uEhJBD65f5-modal" data-bs-target="#uEhJBD65f5-modal">
+                    <img class="w-100" src="assets/images/screenshot-2024-01-20-122711-838x796.png" alt="Mobirise Website Builder" data-slide-to="2" data-bs-slide-to="2" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uEhJBD65f5-modal" data-bs-target="#uEhJBD65f5-modal">
+                    <img class="w-100" src="assets/images/screenshot-2024-01-20-122723-838x810.png" alt="Mobirise Website Builder" data-slide-to="3" data-bs-slide-to="3" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uEhJBD65f5-modal" data-bs-target="#uEhJBD65f5-modal">
+                    <img class="w-100" src="assets/images/screenshot-2024-01-20-122740-838x769.png" alt="Mobirise Website Builder" data-slide-to="4" data-bs-slide-to="4" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div><div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uEhJBD65f5-modal" data-bs-target="#uEhJBD65f5-modal">
+                    <img class="w-100" src="assets/images/screenshot-2024-01-20-122846-758x773.png" alt="Mobirise Website Builder" data-slide-to="5" data-bs-slide-to="5" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uEhJBD65f5-modal" data-bs-target="#uEhJBD65f5-modal">
+                    <img class="w-100" src="assets/images/screenshot-2024-01-20-122909-776x779.png" alt="Mobirise Website Builder" data-slide-to="6" data-bs-slide-to="6" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#uEhJBD65f5-modal" data-bs-target="#uEhJBD65f5-modal">
+                    <img class="w-100" src="assets/images/screenshot-2024-01-20-122808-724x738.png" alt="Mobirise Website Builder" data-slide-to="7" data-bs-slide-to="7" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5">
+                    <div class="icon-wrapper">
+                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="modal mbr-slider" tabindex="-1" role="dialog" aria-hidden="true" id="uEhJBD65f5-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="carousel slide" id="lb-uEhJBD65f5" data-interval="5000" data-bs-interval="5000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assets/images/screenshot-2024-01-20-122635-838x819.png" alt="Mobirise Website Builder">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/screenshot-2024-01-20-122651-838x755.png" alt="Mobirise Website Builder">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/screenshot-2024-01-20-122711-838x796.png" alt="Mobirise Website Builder">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/screenshot-2024-01-20-122723-838x810.png" alt="Mobirise Website Builder">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/screenshot-2024-01-20-122740-838x769.png" alt="Mobirise Website Builder">
+                                </div><div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/screenshot-2024-01-20-122846-758x773.png" alt="Mobirise Website Builder">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/screenshot-2024-01-20-122909-776x779.png" alt="Mobirise Website Builder">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/images/screenshot-2024-01-20-122808-724x738.png" alt="Mobirise Website Builder">
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5"></li>
+                                <li data-slide-to="1" data-bs-slide-to="1" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5"></li>
+                                <li data-slide-to="2" data-bs-slide-to="2" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5"></li>
+                                <li data-slide-to="3" data-bs-slide-to="3" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5"></li>
+                                <li data-slide-to="4" data-bs-slide-to="4" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5"></li><li data-slide-to="5" data-bs-slide-to="5" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5"></li>
+                                <li data-slide-to="6" data-bs-slide-to="6" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5"></li><li data-slide-to="7" data-bs-slide-to="7" data-target="#lb-uEhJBD65f5" data-bs-target="#lb-uEhJBD65f5"></li>
+                                
+                            </ol>
+                            <a role="button" href="" class="close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">
+                            </a>
+                            <a class="carousel-control-prev carousel-control" role="button" data-slide="prev" data-bs-slide="prev" href="#lb-uEhJBD65f5">
+                                <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next carousel-control" role="button" data-slide="next" data-bs-slide="next" href="#lb-uEhJBD65f5">
+                                <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image07 cid-u1SVxwXtUC" id="image07-33">
+  
+
+  
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="card col-12 col-lg-10">
+        <div class="card-wrapper wrap">
+          <div class="card-box align-center">
+           <h1 class="card-title mbr-fonts-style display-2"><strong>Pathfinding for pedestrians</strong></h1>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="mbr-description mt-4 align-center mbr-fonts-style display-7">
+        The algorithm is then used by cars in this city environment&nbsp; for cars to move from one point to another while avoiding other cars and following the traffic rules and stopping at red signals.</p>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="slider05 cid-u1SX2iq5Ja" id="slider05-34">
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-11">
+                <div class="carousel slide" id="uEhJBDEmH6" data-interval="5000" data-bs-interval="5000">
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#uEhJBDEmH6" data-bs-target="#uEhJBDEmH6"></li>
+                        <li data-slide-to="1" data-bs-slide-to="1" data-target="#uEhJBDEmH6" data-bs-target="#uEhJBDEmH6"></li>
+                        <li data-slide-to="2" data-bs-slide-to="2" data-target="#uEhJBDEmH6" data-bs-target="#uEhJBDEmH6"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item slider-image item active">
+                            <div class="item-wrapper">
+                                
+                                <img class="d-block w-100" src="assets/images/screenshot-2024-01-20-125218-861x528.png" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-item slider-image item">
+                            <div class="item-wrapper">
+                                
+                                <img class="d-block w-100" src="assets/images/screenshot-2024-01-20-125056-1536x877.png" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-item slider-image item">
+                            <div class="item-wrapper">
+                                
+                                <img class="d-block w-100" src="assets/images/screenshot-2024-01-20-125145-1162x872.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#uEhJBDEmH6">
+                        <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
+                        <span class="sr-only visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#uEhJBDEmH6">
+                        <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
+                        <span class="sr-only visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer4 cid-u1lxuyDD9q mbr-reveal" once="footers" id="footer04-2t">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">PATHFINDING ENDS</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="social05 cid-u1ZuVPm0ld" id="social05-3g">
+    
+
+    
+
+    <div class="container">
+        <div class="row">
+            <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-5">
+                <strong>Contact</strong></h3>
+            <div class="col-12">
+                <div class="social-row">
+                    <div class="soc-item">
+                        <a href="https://www.linkedin.com/in/jadhavnachiket/" target="_blank">
+                            <span class="mbr-iconfont socicon-linkedin socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="mailto:nachiketjadhav0606@gmail.com">
+                            <span class="mbr-iconfont socicon-mailru socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://www.instagram.com/nachiket.006/" target="_blank">
+                            <span class="mbr-iconfont socicon-instagram socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://github.com/NAchiket06" target="_blank">
+                            <span class="mbr-iconfont mobi-mbri-github mobi-mbri"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://wa.me/917039394818">
+                            <span class="mbr-iconfont mobi-mbri-phone mobi-mbri"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  </body>
+</html>
