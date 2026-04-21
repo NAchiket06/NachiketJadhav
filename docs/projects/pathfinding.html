@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathfinding Demo | Nachiket Jadhav</title>
+  <meta name="description"
+    content="Pathfinding Demo by Nachiket Jadhav: a Dijkstra-based pathfinder with graph setup, shortest-path calculation, Bezier curve smoothing, and smart AI cars traversing a city environment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oxanium:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <div class="page-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="noise"></div>
+
+    <header class="site-header">
+      <a class="brand" href="../index.html#top" target="_blank" rel="noreferrer">
+        <span class="brand-mark"></span>
+        <span>
+          <strong>Nachiket Jadhav</strong>
+          <small>Prototype Detail</small>
+        </span>
+      </a>
+      <nav class="site-nav">
+        <a href="../index.html#prototypes" target="_blank" rel="noreferrer">Prototypes</a>
+        <a href="../index.html#contact" target="_blank" rel="noreferrer">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section detail-hero reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Dijkstra Algorithm - Pathfinding - AI Cars</p>
+          <h1>Pathfinding Demo</h1>
+          <p class="hero-text">
+            A base pathfinder algorithm using Dijkstra's algorithm, with smart AI cars that can traverse an environment
+            while following a set of associated rules.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#how-it-works">How It Works</a>
+            <a class="button button-secondary" href="#result">View Result</a>
+          </div>
+        </div>
+        <img class="detail-image" src="../assets/pathfinding/astarpathfinding.png"
+          alt="Pathfinding graph visualization">
+      </section>
+
+      <section class="section reveal">
+        <div class="detail-grid">
+          <img class="detail-image" src="../assets/pathfinding/astarpathfinding.png"
+            alt="Dijkstra pathfinding diagram">
+          <article class="systems-card">
+            <h3>Dijkstra's Algorithm</h3>
+            <p>
+              Dijkstra's algorithm is a widely used pathfinding algorithm that finds the shortest path between two nodes
+              in a graph by repeatedly selecting the node with the lowest cumulative cost from a source node.
+            </p>
+            <p>
+              It maintains a priority queue to systematically explore and update neighboring node costs, making it a
+              foundational tool for network routing, transportation planning, and optimal path determination.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">How Does It Work?</p>
+          <h2>Graph setup, pathfinding, and curve smoothing for traversable routes.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-index">01</span>
+            <div>
+              <h3>Graph Setup</h3>
+              <p>
+                The algorithm needs a weighted graph where each node has a list of neighboring nodes. A selected node
+                can move to its neighbor nodes after visiting it, and the setup can be extended to give each neighbor a
+                weight property for prioritization.
+              </p>
+              <img class="detail-image media-spaced"
+                src="../assets/pathfinding/screenshot-2024-01-20-113654-1008x863.png"
+                alt="Selected graph node with neighbor nodes">
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-index">02</span>
+            <div>
+              <h3>Complete Graph</h3>
+              <p>
+                Once all nodes are selected, the environment becomes a complete graph that the algorithm can search
+                through to determine valid movement options.
+              </p>
+              <img class="detail-image media-spaced"
+                src="../assets/pathfinding/screenshot-2024-01-20-114043-1331x827.png"
+                alt="Complete graph when all nodes are selected">
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-index">03</span>
+            <div>
+              <h3>Pathfinding</h3>
+              <p>
+                After graph setup, the start and end nodes are marked, and the algorithm finds a path between them. The
+                path visualization shows the route found between the source and target nodes.
+              </p>
+              <p>
+                Reference:
+                <a class="project-cta" href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank"
+                  rel="noreferrer">Dijkstra's Algorithm</a>
+              </p>
+              <img class="detail-image media-spaced"
+                src="../assets/pathfinding/screenshot-2024-01-20-115535-1057x851.png"
+                alt="Path found between source and target node">
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-index">04</span>
+            <div>
+              <h3>Bezier Curves</h3>
+              <p>
+                For smooth traversal, hard edges in the path are softened by calculating Bezier curve points between
+                neighboring nodes. A step value controls how smooth the curve needs to be.
+              </p>
+              <p>
+                Reference:
+                <a class="project-cta" href="https://youtu.be/jvPPXbo87ds?t=139" target="_blank"
+                  rel="noreferrer">Bezier Curves Explanation</a>
+              </p>
+              <img class="detail-image media-spaced"
+                src="../assets/pathfinding/screenshot-2024-01-20-121418-1256x1256.png"
+                alt="Bezier curves formed at different step values">
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="result" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">The Result</p>
+          <h2>A smooth path between two nodes for entities to follow through virtual environments.</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <img src="../assets/pathfinding/screenshot-2024-01-20-122635-838x819.png"
+              alt="Smooth path result 01">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/pathfinding/screenshot-2024-01-20-122651-838x755.png"
+              alt="Smooth path result 02">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/pathfinding/screenshot-2024-01-20-122711-838x796.png"
+              alt="Smooth path result 03">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/pathfinding/screenshot-2024-01-20-122723-838x810.png"
+              alt="Smooth path result 04">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/pathfinding/screenshot-2024-01-20-122740-838x769.png"
+              alt="Smooth path result 05">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/pathfinding/screenshot-2024-01-20-122846-758x773.png"
+              alt="Smooth path result 06">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/pathfinding/screenshot-2024-01-20-122909-776x779.png"
+              alt="Smooth path result 07">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/pathfinding/screenshot-2024-01-20-122808-724x738.png"
+              alt="Smooth path result 08">
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Pathfinding For Pedestrians</p>
+          <h2>Applying the algorithm in a city environment for moving agents.</h2>
+        </div>
+
+        <div class="systems-card">
+          <p>
+            The algorithm is then used by cars in a city environment to move from one point to another while avoiding
+            other cars, following traffic rules, and stopping at red signals.
+          </p>
+        </div>
+
+        <div class="gallery-grid media-spaced">
+          <article class="gallery-card">
+            <img src="../assets/pathfinding/screenshot-2024-01-20-125218-861x528.png"
+              alt="City pathfinding traffic simulation 01">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/pathfinding/screenshot-2024-01-20-125056-1536x877.png"
+              alt="City pathfinding traffic simulation 02">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/pathfinding/screenshot-2024-01-20-125145-1162x872.png"
+              alt="City pathfinding traffic simulation 03">
+          </article>
+        </div>
+      </section>
+
+      <section class="quote-panel reveal">
+        <p class="eyebrow">Prototype Note</p>
+        <blockquote>Pathfinding ends.</blockquote>
+      </section>
+
+      <section class="section reveal">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Interested in more AI, navigation, or Unity prototype details?</h2>
+          </div>
+
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:nachiketjadhav0606@gmail.com">Email</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/jadhavnachiket/" target="_blank"
+              rel="noreferrer">LinkedIn</a>
+            <a class="button button-secondary" href="https://github.com/NAchiket06" target="_blank"
+              rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../script.js"></script>
+</body>
+
+</html>

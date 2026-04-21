@@ -425,6 +425,7 @@ h1 {
 }
 
 .project-card {
+  display: block;
   border-radius: var(--radius-xl);
   overflow: hidden;
   transition: transform 220ms ease, border-color 220ms ease;
@@ -436,9 +437,22 @@ h1 {
   border-color: rgba(184, 216, 180, 0.28);
 }
 
+.project-card:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 4px;
+}
+
 .project-art {
   min-height: 220px;
   position: relative;
+}
+
+.project-media {
+  width: 100%;
+  min-height: 220px;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: cover;
 }
 
 .project-art::after {
@@ -471,6 +485,16 @@ h1 {
 
 .project-copy {
   padding: 1.4rem;
+}
+
+.project-cta {
+  display: inline-flex;
+  margin-top: 0.8rem;
+  color: var(--accent-strong);
+  font-family: "Oxanium", sans-serif;
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .project-type {
@@ -582,6 +606,74 @@ blockquote {
   align-items: center;
 }
 
+.detail-hero {
+  min-height: auto;
+  padding-top: 8rem;
+}
+
+.detail-hero h1 {
+  max-width: 14ch;
+}
+
+.detail-image {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.detail-grid,
+.gallery-grid {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.detail-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.gallery-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gallery-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.gallery-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: cover;
+}
+
+.gallery-card div {
+  padding: 1.2rem;
+}
+
+.media-spaced {
+  margin-top: 1.4rem;
+}
+
+.video-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  padding: 0.8rem;
+}
+
+.project-video {
+  width: 100%;
+  display: block;
+  border-radius: calc(var(--radius-xl) - 10px);
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(32px);
@@ -651,7 +743,9 @@ blockquote {
 
   .hero,
   .systems-layout,
-  .project-grid {
+  .project-grid,
+  .detail-grid,
+  .gallery-grid {
     grid-template-columns: 1fr;
   }
 

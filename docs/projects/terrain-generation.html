@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procedural Terrain Generator | Nachiket Jadhav</title>
+  <meta name="description"
+    content="Procedural Terrain Generator prototype by Nachiket Jadhav: a Unity flat-surface terrain generator using Perlin noise, Ghibli-style shaded assets, and customizable environment controls.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oxanium:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <div class="page-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="noise"></div>
+
+    <header class="site-header">
+      <a class="brand" href="../index.html#top" target="_blank" rel="noreferrer">
+        <span class="brand-mark"></span>
+        <span>
+          <strong>Nachiket Jadhav</strong>
+          <small>Prototype Detail</small>
+        </span>
+      </a>
+      <nav class="site-nav">
+        <a href="../index.html#prototypes" target="_blank" rel="noreferrer">Prototypes</a>
+        <a href="../index.html#contact" target="_blank" rel="noreferrer">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section detail-hero reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Procedural Generation - Unity - Perlin Noise</p>
+          <h1>Procedural Terrain Generator</h1>
+          <p class="hero-text">
+            A flat-surface terrain generator that can create large-scale environments in a few clicks. The prototype
+            focuses on procedural generation, Ghibli-style shaded environment assets, and highly customizable terrain
+            properties.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#features">Learn More</a>
+            <a class="button button-secondary" href="#result">Watch Result</a>
+          </div>
+        </div>
+        <img class="detail-image" src="../assets/terrain/screenshot-2023-12-25-162127-1599x898.png"
+          alt="Procedural terrain generated environment">
+      </section>
+
+      <section id="features" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Features</p>
+          <h2>Large-scale flat environments generated quickly and customized inside Unity.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="systems-card">
+            <h3>Procedural Generation</h3>
+            <p>Click a button to create large-scale environments without hand-placing every detail.</p>
+          </article>
+          <article class="systems-card">
+            <h3>Ghibli Style Shading</h3>
+            <p>Uses Ghibli-style shaded environment assets to give generated scenes a soft, stylized look.</p>
+          </article>
+          <article class="systems-card">
+            <h3>Highly Customizable</h3>
+            <p>Easily change assets and terrain properties by dragging them into the editor and setting values.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">System Breakdown</p>
+          <h2>How the generator creates natural-looking terrain variation.</h2>
+        </div>
+
+        <div class="detail-grid">
+          <article class="systems-card">
+            <h3>Procedural Generation</h3>
+            <p>
+              Procedural terrain generation automatically creates virtual landscapes through algorithms instead of
+              handcrafting every detail. This saves time and resources while giving players unique, unpredictable
+              landscapes that encourage discovery and exploration.
+            </p>
+          </article>
+          <img class="detail-image" src="../assets/terrain/screenshot-2023-12-25-114300-1256x755.png"
+            alt="Procedural terrain generation example in Unity">
+        </div>
+
+        <div class="detail-grid media-spaced">
+          <article class="systems-card">
+            <h3>Perlin Noise</h3>
+            <p>
+              Perlin noise generates coherent, flowing structures, making it useful for terrain, clouds, organic
+              textures, and other natural patterns. It adds visually pleasing randomness while avoiding abrupt changes.
+            </p>
+          </article>
+          <img class="detail-image" src="../assets/terrain/1-vo6vihee67cam6mk3acsa-1256x1256.png"
+            alt="Perlin noise visual reference">
+        </div>
+
+        <div class="detail-grid media-spaced">
+          <article class="systems-card">
+            <h3>Customizations</h3>
+            <p>
+              The generator offers customization for changing assets and terrain properties directly in the editor,
+              allowing scenes to be adjusted for different requirements and scales.
+            </p>
+          </article>
+          <img class="detail-image" src="../assets/terrain/screenshot-2023-12-25-120823-525x490.png"
+            alt="Terrain generator customization controls">
+        </div>
+      </section>
+
+      <section id="result" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">The Result</p>
+          <h2>A layered Perlin-noise environment generator for scenes of many scales.</h2>
+        </div>
+
+        <div class="systems-card">
+          <p>
+            The result is a procedurally generated environment using layers of Perlin noise that can be customized to
+            create scenes of different scales within minutes.
+          </p>
+        </div>
+
+        <div class="video-card media-spaced">
+          <video class="project-video" controls preload="metadata"
+            poster="../assets/terrain/screenshot-2023-12-25-162127-1599x898.png">
+            <source src="../assets/terrain/procedural_demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Generated Worlds</p>
+          <h2>Image captures from environments made with the procedural generator.</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <img src="../assets/terrain/screenshot-2023-12-25-162127-1599x898.png"
+              alt="Generated terrain capture 01">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/terrain/screenshot-2023-12-25-162213-1599x897.png"
+              alt="Generated terrain capture 02">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/terrain/screenshot-2023-12-25-162324-1598x893.png"
+              alt="Generated terrain capture 03">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/terrain/screenshot-2023-12-25-164630-596x445.png"
+              alt="Generated terrain close-up 01">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/terrain/screenshot-2023-12-25-164247-596x441.png"
+              alt="Generated terrain close-up 02">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/terrain/screenshot-2023-12-25-164725-596x445.png"
+              alt="Generated terrain close-up 03">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/terrain/screenshot-2023-12-25-164812-596x444.png"
+              alt="Generated terrain close-up 04">
+          </article>
+          <article class="gallery-card">
+            <img src="../assets/terrain/screenshot-2023-12-25-164850-1200x896.png"
+              alt="Generated terrain large environment capture">
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Interested in more procedural generation, Unity tools, or gameplay prototype details?</h2>
+          </div>
+
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:nachiketjadhav0606@gmail.com">Email</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/jadhavnachiket/" target="_blank"
+              rel="noreferrer">LinkedIn</a>
+            <a class="button button-secondary" href="https://github.com/NAchiket06" target="_blank"
+              rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../script.js"></script>
+</body>
+
+</html>

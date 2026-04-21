@@ -82,9 +82,11 @@
 
       <nav class="site-nav">
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
+        <a href="#shipped">Shipped</a>
+        <a href="#prototypes">Prototypes</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
+        <a href="#misc">Misc</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -101,7 +103,7 @@
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-primary" href="#shipped">View Projects</a>
             <a class="button button-secondary" href="#contact">Contact</a>
           </div>
 
@@ -212,15 +214,16 @@
         </div>
       </section>
 
-      <section id="projects" class="section reveal">
+      <section id="shipped" class="section reveal">
         <div class="section-heading">
           <p class="eyebrow">Shipped Titles</p>
-          <!-- <h2>Projects highlighted directly from the resume.</h2> -->
+          <h2>Released work and public-facing products.</h2>
         </div>
 
         <div class="project-grid">
-          <article class="project-card">
-            <div class="project-art skyline"></div>
+          <a class="project-card" href="https://play.google.com/store/apps/details?id=raftaar.funwave.run"
+            target="_blank" rel="noreferrer">
+            <img class="project-media" src="assets/raftaar-run.png" alt="Custom artwork for Raftaar Run">
             <div class="project-copy">
               <p class="project-type">Multiplayer Platformer Runner</p>
               <h3>Raftaar Run</h3>
@@ -232,11 +235,13 @@
                 <li>Cross-platform mobile development</li>
                 <li>Real-time networking and synchronization</li>
               </ul>
+              <span class="project-cta">Open Website</span>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card">
-            <div class="project-art skyline"></div>
+          <a class="project-card" href="https://play.google.com/store/apps/details?id=com.funwavestudio.raftaarRivals"
+            target="_blank" rel="noreferrer">
+            <img class="project-media" src="assets/balloon-battle.png" alt="Custom artwork for Balloon Battle">
             <div class="project-copy">
               <p class="project-type">Party Game</p>
               <h3>Balloon Battle</h3>
@@ -248,11 +253,12 @@
                 <li>Cross-platform mobile development</li>
                 <li>Real-time networking and synchronization</li>
               </ul>
+              <span class="project-cta">Open Website</span>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card">
-            <div class="project-art skyline"></div>
+          <a class="project-card" href="https://www.upitch.app/" target="_blank" rel="noreferrer">
+            <img class="project-media" src="assets/upitch.png" alt="Custom artwork for UPitch">
             <div class="project-copy">
               <p class="project-type">Networking Application</p>
               <h3>UPitch</h3>
@@ -265,11 +271,13 @@
                 <li>Product-focused feature delivery</li>
                 <li>Idea-sharing and pitch showcase use case</li>
               </ul>
+              <span class="project-cta">Open Website</span>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card">
-            <div class="project-art ember"></div>
+          <a class="project-card" href="https://play.google.com/store/search?q=Tower%20of%20Demons&c=apps"
+            target="_blank" rel="noreferrer">
+            <img class="project-media" src="assets/tod.png" alt="Custom artwork for Tower of Demons">
             <div class="project-copy">
               <p class="project-type">Hack-and-Slash Hyper-Casual Game</p>
               <h3>Tower of Demons</h3>
@@ -282,11 +290,13 @@
                 <li>Mobile-focused performance and iteration</li>
                 <li>Store-ready production pipeline support</li>
               </ul>
+              <span class="project-cta">Open Website</span>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card">
-            <div class="project-art moss"></div>
+          <a class="project-card" href="https://apps.apple.com/us/app/fight-hero/id6738768527" target="_blank"
+            rel="noreferrer">
+            <img class="project-media" src="assets/fight-hero.png" alt="Custom artwork for Fight Hero">
             <div class="project-copy">
               <p class="project-type">Arcade Action Game</p>
               <h3>Fight Hero</h3>
@@ -299,21 +309,22 @@
                 <li>Mobile deployment support</li>
                 <li>Production quality and release execution</li>
               </ul>
+              <span class="project-cta">Open Website</span>
             </div>
-          </article>
+          </a>
         </div>
       </section>
 
 
-      <section id="projects" class="section reveal">
+      <section id="prototypes" class="section reveal">
         <div class="section-heading">
           <p class="eyebrow">Prototypes</p>
-          <!-- <h2>Projects highlighted directly from the resume.</h2> -->
+          <h2>Prototype explorations with dedicated visual pages.</h2>
         </div>
 
         <div class="project-grid">
-          <article class="project-card">
-            <div class="project-art skyline"></div>
+          <a class="project-card" href="projects/terrain-generation.html" target="_blank" rel="noreferrer">
+            <img class="project-media" src="assets/terrain-preview.png" alt="Custom artwork for Terrain Generation">
             <div class="project-copy">
               <p class="project-type">Procedural Generation</p>
               <h3>Terrain Generation</h3>
@@ -325,75 +336,43 @@
                 <li>Perlin noise algorithm</li>
                 <li>Fully Customizable</li>
               </ul>
+              <span class="project-cta">Open Page</span>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card">
-            <div class="project-art skyline"></div>
+          <a class="project-card" href="projects/pathfinding.html" target="_blank" rel="noreferrer">
+            <img class="project-media" src="assets/pathfinding-preview.png" alt="Custom artwork for Pathfinding">
             <div class="project-copy">
-              <p class="project-type">Party Game</p>
-              <h3>Balloon Battle</h3>
+              <p class="project-type">Pathfinding</p>
+              <h3>A* Pathfinding</h3>
               <p>
-                A party game where players compete to pop each other's balloons.
+                A* Pathfinding algorithm implementation for Unity Engine.
               </p>
               <ul>
-                <li>Party game development</li>
-                <li>Cross-platform mobile development</li>
-                <li>Real-time networking and synchronization</li>
+                <li>Pathfinding algorithm</li>
+                <li>Unity Engine</li>
+                <li>Real-time pathfinding</li>
               </ul>
+              <span class="project-cta">Open Page</span>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card">
-            <div class="project-art skyline"></div>
+          <a class="project-card" href="projects/arkye-prototype.html" target="_blank" rel="noreferrer">
+            <img class="project-media" src="assets/arkye-preview.png" alt="Custom artwork for Arkye's Escape prototype">
             <div class="project-copy">
-              <p class="project-type">Networking Application</p>
-              <h3>UPitch</h3>
+              <p class="project-type">Puzzle Generator</p>
+              <h3>Arkye's Escape</h3>
               <p>
-                A networking app designed to protect ideas and help users showcase elevator pitches to angel investors
-                and venture capital firms.
+                A puzzle game where players is stranded on an island and needs to escape.
               </p>
               <ul>
-                <li>Interactive application development</li>
-                <li>Product-focused feature delivery</li>
-                <li>Idea-sharing and pitch showcase use case</li>
+                <li>Procedural puzzle generation</li>
+                <li>Unity Engine</li>
+                <li>Real-time puzzle solving</li>
               </ul>
+              <span class="project-cta">Open Page</span>
             </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-art ember"></div>
-            <div class="project-copy">
-              <p class="project-type">Hack-and-Slash Hyper-Casual Game</p>
-              <h3>Tower of Demons</h3>
-              <p>
-                An upcoming hack-and-slash hyper-casual mobile game developed over 3 months and intended for Play
-                Store and App Store release.
-              </p>
-              <ul>
-                <li>Gameplay system implementation</li>
-                <li>Mobile-focused performance and iteration</li>
-                <li>Store-ready production pipeline support</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-art moss"></div>
-            <div class="project-copy">
-              <p class="project-type">Arcade Action Game</p>
-              <h3>Fight Hero</h3>
-              <p>
-                An arcade action game developed by Fifty Five Technologies for mobile platforms and made available on
-                Play Store and App Store.
-              </p>
-              <ul>
-                <li>Unity gameplay programming</li>
-                <li>Mobile deployment support</li>
-                <li>Production quality and release execution</li>
-              </ul>
-            </div>
-          </article>
+          </a>
         </div>
       </section>
 
@@ -525,6 +504,26 @@
             </div>
           </article>
         </div>
+      </section>
+
+      <section id="misc" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Misc Projects</p>
+          <h2>A visual gallery for smaller experiments, tools, and creative prototypes.</h2>
+        </div>
+
+        <a class="project-card" href="misc-projects.html" target="_blank" rel="noreferrer">
+          <img class="project-media" src="assets/misc-projects.svg" alt="Custom artwork for miscellaneous projects">
+          <div class="project-copy">
+            <p class="project-type">Project Gallery</p>
+            <h3>Open Misc Projects</h3>
+            <p>
+              A dedicated gallery page for additional custom visuals, experimental systems, and smaller project
+              snapshots.
+            </p>
+            <span class="project-cta">Open Gallery Page</span>
+          </div>
+        </a>
       </section>
 
       <section id="contact" class="section reveal">
